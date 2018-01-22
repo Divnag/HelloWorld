@@ -11,13 +11,13 @@ namespace Hello_World
         static void Main(string[] args)
         {
             //calling method
-            Console.WriteLine("Hello World");
+           // Console.WriteLine("Hello World");
 
             //declared a variable message. String is datatype
 
             //part one greeting statement
-            String messageOne = "Hello  World";
-            String messageTwo = "I am Spartacus";
+          //  String messageOne = "Hello  World";
+           String messageTwo = "I am Spartacus";
 
             ////part two set intial spartacus attributes
             int ageOne = 35;
@@ -123,7 +123,8 @@ namespace Hello_World
            //     Console.WriteLine("we will march to Nuceria");
          //   }
                 //part twelve if else statement
-                //Console.WriteLine("What is your rank solider");
+               
+            //Console.WriteLine("What is your rank solider");
                 //String rank = Console.ReadLine();
                 //String rank1 = rank.ToLower();
                 //Console.WriteLine("What is your age");
@@ -144,8 +145,42 @@ namespace Hello_World
             //    Console.WriteLine("sorry, you are staying home");
             //}
 
+            //part 13
+
+            string[] foodList = new string[5];
+            foodList[0] = "milk";
+            foodList[1] = "fruit";
+            foodList[2] = "meat";
+            foodList[3] = "wine";
+            foodList[4]="bread";
+            Console.WriteLine("{0}, {1} ,{2} ,{3}, {4}",foodList[0],foodList[1],foodList[2],foodList[3],foodList[4]);
+            Console.WriteLine(foodList.Length);
+
+            int[] foodAmount = new int[5];
+            foodAmount[0] = 1000;
+            foodAmount[1] = 100;
+            foodAmount[2] = 2000;
+            foodAmount[3] = 10000;
+            foodAmount[4] = 1500;
+            Console.WriteLine("{0},{1},{2},{3},{4}", foodAmount[0],  foodAmount[1], foodAmount[2], foodAmount[3], foodAmount[4]);
+            Console.WriteLine(foodList[0] +":"+foodAmount[0]+" "+ foodList[1]+":"+ foodAmount[1]+" "+ foodList[2]+":"+ foodAmount[2]+" "+ foodList[3]+":"+ foodAmount[3]+" "+ foodList[4]+":"+ foodAmount[4]);
+
+            String[] element = messageTwo.Split(' ');
+            Console.WriteLine(element[0]);//print I
+           // Console.WriteLine(element[1]);//Print Am
+          //  Console.WriteLine(element[2]);//Print Spartcus
+
+            String myName = "sue";
+            Char[] letters = myName.ToCharArray();
+            Console.WriteLine("{0},{1},{2}", letters[0], letters[1], letters[2]);
+            //Console.Write(letters[0]);
+           // Console.Write(letters[1]);
+           // Console.WriteLine(letters[2]);
+
             switch (job)
-            {
+            { 
+
+            
                 case "infantry":
                     Console.WriteLine("you will carry a sword");
                     break;
