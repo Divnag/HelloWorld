@@ -1,0 +1,171 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Hello_World
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //calling method
+            Console.WriteLine("Hello World");
+
+            //declared a variable message. String is datatype
+
+            //part one greeting statement
+            String messageOne = "Hello  World";
+            String messageTwo = "I am Spartacus";
+
+            ////part two set intial spartacus attributes
+            int ageOne = 35;
+            int ageTwo = 45;
+            int ageThree = 80;
+            double heightOne = 72.50;
+            double heightTwo = 91.45;
+            float weightOne = 210.0284606f;
+            float weightTwo = 331.12345678f;
+            bool isGodLikeOne = true;
+            bool isGodLikeTwo = false;
+            char genderMale = 'M';
+            char genderFemale = 'F';
+
+            ////part three display variable values
+            //Console.WriteLine(messageOne);// display intial greeting to console
+            //Console.WriteLine(messageTwo);
+
+            ////part four mathematical operator,bool and char examples
+            //Console.WriteLine(ageOne + ageTwo);
+
+            ////part five variable reaassignment
+            //ageTwo = 70;
+
+            ////part six matematical operator examples
+            //Console.WriteLine(ageOne + ageTwo);
+
+            //Console.WriteLine(heightOne - heightTwo);
+            //heightTwo = 35.12345;
+
+            //Console.WriteLine(heightOne - heightTwo);
+            //Console.WriteLine(weightOne * weightTwo);
+
+            //weightTwo = -429.1234573f;
+            //Console.WriteLine(weightOne / weightTwo);
+
+            //Console.WriteLine(isGodLikeOne);
+            //Console.WriteLine(genderMale);
+            //Console.WriteLine(ageTwo / ageOne);
+            //Console.WriteLine(ageTwo % ageOne);
+            //Console.WriteLine(ageThree / ageOne);
+            //Console.WriteLine(ageThree % ageOne);
+
+            //part seven increment and decrement operator examples
+
+            //ageTwo++;
+            //Console.WriteLine(ageTwo);
+            //ageTwo--;
+            //Console.WriteLine(ageTwo);
+            //Console.WriteLine(5 == 5);
+            //Console.WriteLine(40 != 40);
+            //Console.WriteLine(11 < 4);
+
+            //part eight concatination example
+            /* Console.WriteLine(messageOne + " " + messageTwo + ".");
+             Console.WriteLine("I am " + ageOne + "and yes it's " + isGodLikeOne + " I am godlike");
+             Console.WriteLine("I am around " + weightOne + " pounds" + " and I am around " + heightOne + " inches tall");
+             //using index in Array
+             Console.WriteLine("I am {0} years old and yes it's {1} I am godlike.", ageOne, isGodLikeOne);
+             Console.WriteLine("I am around {0} pounds and i am arounf {1} inches tall", weightOne, heightOne);*/
+
+            //part nine string equlity examples
+            /*Console.WriteLine(messageOne.Equals(messageTwo));//messageOne.Equals() is a method.equal method
+            Console.WriteLine(messageTwo.Equals("I am Spartacus"));
+        
+            // .ToUpper() and .ToLower() method
+           String myGreetings = "Hello";
+            Console.WriteLine(myGreetings.ToUpper());
+            Console.WriteLine(myGreetings.ToLower());
+            Console.WriteLine(myGreetings);*/
+
+            //part Ten string length examples .lenght method
+            //int messageOneLength = messageOne.Length;
+            //int messageTwoLength = messageTwo.Length;
+            //Console.WriteLine( "The length of messageOne is"+messageOne.Length );
+            //Console.WriteLine("The length of messageTwo is" + messageTwo.Length);
+            //Console.WriteLine("The length of messageOne is" + messageOneLength);
+            //Console.WriteLine("The length of messageTwo is" + messageTwoLength);
+
+            //Part eleven conditional example
+            //String city1 = "vesuvius";
+            //String city2 = "Nola";
+            //String city3 = "Nuceria";
+            //int city1distance, city2distance, city3distance;
+
+            ////solicit user input example
+            //Console.WriteLine("what is your distance{0}",city1);
+            //city1distance = int.Parse(Console.ReadLine());
+            //Console.WriteLine("what is the distance to"+city2+"?");
+            // city2distance = int.Parse(Console.ReadLine());
+            //Console.WriteLine("what is the distace to nuceria");
+            // city3distance = int.Parse(Console.ReadLine());
+            //if((city1distance<=125)&& ((city1distance < city2distance)&& (city1distance < city3distance)))
+            //{
+            //     Console.WriteLine("we will march to vesuvius");
+            //  }
+            // if ((city2distance <= 125) && ((city2distance < city1distance) && (city2distance < city3distance)))
+            // {
+            // Console.WriteLine("we will march to Nola");
+            // }
+           // if ((city3distance <= 125) && ((city3distance < city1distance) && (city3distance < city1distance)))
+           // {
+           //     Console.WriteLine("we will march to Nuceria");
+         //   }
+                //part twelve if else statement
+                //Console.WriteLine("What is your rank solider");
+                //String rank = Console.ReadLine();
+                //String rank1 = rank.ToLower();
+                //Console.WriteLine("What is your age");
+                //int age = int.Parse(Console.ReadLine());
+                //Console.WriteLine("what is your job");
+                String job = Console.ReadLine();
+
+            //if((rank1=="officer") || (age<=26))
+            //    {
+            //    Console.WriteLine("Get your gear ,kiss goodbye,put on your marching boots");
+
+            //}
+            //else if((job=="cook") ||(age>=26))
+            //    {
+            //    Console.WriteLine("my army has to eat. pack your pots and pans");
+            //}
+            //else{
+            //    Console.WriteLine("sorry, you are staying home");
+            //}
+
+            switch (job)
+            {
+                case "infantry":
+                    Console.WriteLine("you will carry a sword");
+                    break;
+
+                case "archers":
+                    Console.WriteLine("you will  a bow and arrow");
+                    break;
+
+                case "supply":
+                    Console.WriteLine("you will carry pots and pan");
+                    break;
+
+                case "specalist":
+                    Console.WriteLine("you will operate the capital");
+                    break;
+
+                default:
+                    Console.WriteLine("you will ride horseback");
+                    break;
+            }
+        }
+    }
+}
