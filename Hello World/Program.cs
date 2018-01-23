@@ -11,15 +11,17 @@ namespace Hello_World
         static void Main(string[] args)
         {
             //calling method
-           // Console.WriteLine("Hello World");
+            // Console.WriteLine("Hello World");
 
             //declared a variable message. String is datatype
 
             //part one greeting statement
-          //  String messageOne = "Hello  World";
-           String messageTwo = "I am Spartacus";
+
+            //  String messageOne = "Hello  World";
+            String messageTwo = "I am Spartacus";
 
             ////part two set intial spartacus attributes
+
             int ageOne = 35;
             int ageTwo = 45;
             int ageThree = 80;
@@ -33,16 +35,20 @@ namespace Hello_World
             char genderFemale = 'F';
 
             ////part three display variable values
+
             //Console.WriteLine(messageOne);// display intial greeting to console
             //Console.WriteLine(messageTwo);
 
             ////part four mathematical operator,bool and char examples
+
             //Console.WriteLine(ageOne + ageTwo);
 
             ////part five variable reaassignment
+
             //ageTwo = 70;
 
             ////part six matematical operator examples
+
             //Console.WriteLine(ageOne + ageTwo);
 
             //Console.WriteLine(heightOne - heightTwo);
@@ -72,6 +78,7 @@ namespace Hello_World
             //Console.WriteLine(11 < 4);
 
             //part eight concatination example
+
             /* Console.WriteLine(messageOne + " " + messageTwo + ".");
              Console.WriteLine("I am " + ageOne + "and yes it's " + isGodLikeOne + " I am godlike");
              Console.WriteLine("I am around " + weightOne + " pounds" + " and I am around " + heightOne + " inches tall");
@@ -80,6 +87,7 @@ namespace Hello_World
              Console.WriteLine("I am around {0} pounds and i am arounf {1} inches tall", weightOne, heightOne);*/
 
             //part nine string equlity examples
+
             /*Console.WriteLine(messageOne.Equals(messageTwo));//messageOne.Equals() is a method.equal method
             Console.WriteLine(messageTwo.Equals("I am Spartacus"));
         
@@ -90,6 +98,7 @@ namespace Hello_World
             Console.WriteLine(myGreetings);*/
 
             //part Ten string length examples .lenght method
+
             //int messageOneLength = messageOne.Length;
             //int messageTwoLength = messageTwo.Length;
             //Console.WriteLine( "The length of messageOne is"+messageOne.Length );
@@ -98,6 +107,7 @@ namespace Hello_World
             //Console.WriteLine("The length of messageTwo is" + messageTwoLength);
 
             //Part eleven conditional example
+
             //String city1 = "vesuvius";
             //String city2 = "Nola";
             //String city3 = "Nuceria";
@@ -118,19 +128,19 @@ namespace Hello_World
             // {
             // Console.WriteLine("we will march to Nola");
             // }
-           // if ((city3distance <= 125) && ((city3distance < city1distance) && (city3distance < city1distance)))
-           // {
-           //     Console.WriteLine("we will march to Nuceria");
-         //   }
-                //part twelve if else statement
-               
+            // if ((city3distance <= 125) && ((city3distance < city1distance) && (city3distance < city1distance)))
+            // {
+            //     Console.WriteLine("we will march to Nuceria");
+            //   }
+            //part twelve if else statement
+
             //Console.WriteLine("What is your rank solider");
-                //String rank = Console.ReadLine();
-                //String rank1 = rank.ToLower();
-                //Console.WriteLine("What is your age");
-                //int age = int.Parse(Console.ReadLine());
-                //Console.WriteLine("what is your job");
-                String job = Console.ReadLine();
+            //String rank = Console.ReadLine();
+            //String rank1 = rank.ToLower();
+            //Console.WriteLine("What is your age");
+            //int age = int.Parse(Console.ReadLine());
+            //Console.WriteLine("what is your job");
+            // String job = Console.ReadLine();
 
             //if((rank1=="officer") || (age<=26))
             //    {
@@ -147,60 +157,130 @@ namespace Hello_World
 
             //part 13
 
-            string[] foodList = new string[5];
-            foodList[0] = "milk";
-            foodList[1] = "fruit";
-            foodList[2] = "meat";
-            foodList[3] = "wine";
-            foodList[4]="bread";
-            Console.WriteLine("{0}, {1} ,{2} ,{3}, {4}",foodList[0],foodList[1],foodList[2],foodList[3],foodList[4]);
-            Console.WriteLine(foodList.Length);
+             string[] foodList = new string[5];
+             foodList[0] = "milk";
+             foodList[1] = "fruit";
+             foodList[2] = "meat";
+             foodList[3] = "wine";
+             foodList[4]="bread";
+           //  Console.WriteLine("{0}, {1} ,{2} ,{3}, {4}",foodList[0],foodList[1],foodList[2],foodList[3],foodList[4]);
+            // Console.WriteLine(foodList.Length);
 
-            int[] foodAmount = new int[5];
-            foodAmount[0] = 1000;
-            foodAmount[1] = 100;
-            foodAmount[2] = 2000;
-            foodAmount[3] = 10000;
-            foodAmount[4] = 1500;
-            Console.WriteLine("{0},{1},{2},{3},{4}", foodAmount[0],  foodAmount[1], foodAmount[2], foodAmount[3], foodAmount[4]);
-            Console.WriteLine(foodList[0] +":"+foodAmount[0]+" "+ foodList[1]+":"+ foodAmount[1]+" "+ foodList[2]+":"+ foodAmount[2]+" "+ foodList[3]+":"+ foodAmount[3]+" "+ foodList[4]+":"+ foodAmount[4]);
+             int[] foodAmount = new int[5];
+             foodAmount[0] = 1000;
+             foodAmount[1] = 100;
+             foodAmount[2] = 2000;
+             foodAmount[3] = 10000;
+             foodAmount[4] = 1500;
+           //  Console.WriteLine("{0},{1},{2},{3},{4}", foodAmount[0],  foodAmount[1], foodAmount[2], foodAmount[3], foodAmount[4]);
+            // Console.WriteLine(foodList[0] +":"+foodAmount[0]+" "+ foodList[1]+":"+ foodAmount[1]+" "+ foodList[2]+":"+ foodAmount[2]+" "+ foodList[3]+":"+ foodAmount[3]+" "+ foodList[4]+":"+ foodAmount[4]);
 
-            String[] element = messageTwo.Split(' ');
-            Console.WriteLine(element[0]);//print I
-           // Console.WriteLine(element[1]);//Print Am
-          //  Console.WriteLine(element[2]);//Print Spartcus
+           //  String[] element = messageTwo.Split(' ');
+          //   Console.WriteLine(element[0]);//print I
+            // Console.WriteLine(element[1]);//Print Am
+           //  Console.WriteLine(element[2]);//Print Spartcus
 
-            String myName = "sue";
-            Char[] letters = myName.ToCharArray();
-            Console.WriteLine("{0},{1},{2}", letters[0], letters[1], letters[2]);
-            //Console.Write(letters[0]);
-           // Console.Write(letters[1]);
-           // Console.WriteLine(letters[2]);
+             //String myName = "sue";
+            // Char[] letters = myName.ToCharArray();
+           //  Console.WriteLine("{0},{1},{2}", letters[0], letters[1], letters[2]);
+             //Console.Write(letters[0]);
+            // Console.Write(letters[1]);
+            // Console.WriteLine(letters[2]);
 
-            switch (job)
-            { 
+            /* switch (job)
+             { 
 
-            
-                case "infantry":
-                    Console.WriteLine("you will carry a sword");
-                    break;
 
-                case "archers":
-                    Console.WriteLine("you will  a bow and arrow");
-                    break;
+                 case "infantry":
+                     Console.WriteLine("you will carry a sword");
+                     break;
 
-                case "supply":
-                    Console.WriteLine("you will carry pots and pan");
-                    break;
+                 case "archers":
+                     Console.WriteLine("you will  a bow and arrow");
+                     break;
 
-                case "specalist":
-                    Console.WriteLine("you will operate the capital");
-                    break;
+                 case "supply":
+                     Console.WriteLine("you will carry pots and pan");
+                     break;
 
-                default:
-                    Console.WriteLine("you will ride horseback");
-                    break;
+                 case "specalist":
+                     Console.WriteLine("you will operate the capital");
+                     break;
+
+                 default:
+                     Console.WriteLine("you will ride horseback");
+                     break;
+             }*/
+
+
+            // Part 13 loops(while)and do while()
+          /*  string action = " ";
+            while (action != "exit")
+            {
+                Console.WriteLine("What is your rank soldier?");
+                string rank = Console.ReadLine();
+                Console.WriteLine("What is your age soldier?");
+                int age = int.Parse(Console.ReadLine());
+                Console.WriteLine("What is your job soldier?");
+                string job = Console.ReadLine();
+
+                if ((rank == "officer") || (age <= 26))
+                {
+                    Console.WriteLine("Get your gear, kiss your family goodbye, put on your marching boots.");
+                }
+                else if ((job == "cook") || (age >= 26))
+                {
+                    Console.WriteLine("My army has to eat. Pack your pots and pans");
+                }
+                else
+                {
+                    Console.WriteLine("Sorry you are staying home.");
+                }
+                Console.WriteLine("Add another? Type exit to quit");
+                action = Console.ReadLine();
+            }*/
+
+          /*  string action = " ";
+            do
+            {
+                Console.WriteLine("What is your rank soldier?");
+                string rank = Console.ReadLine();
+
+                Console.WriteLine("What is your age soldier?");
+                int age = int.Parse(Console.ReadLine());
+                Console.WriteLine("What is your job soldier?");
+                string job = Console.ReadLine();
+
+                if ((rank == "officer") || (age <= 26))
+                {
+                    Console.WriteLine("Get your gear, kiss your family goodbye, put on your marching boots.");
+                }
+                else if ((job == "cook") || (age >= 26))
+                {
+                    Console.WriteLine("My army has to eat. Pack your pots and pans");
+                }
+                else
+                {
+                    Console.WriteLine("Sorry you are staying home.");
+                }
+                Console.WriteLine("Add another? Type exit to quit");
+                action = Console.ReadLine();
+            } 
+            while (action != "exit");*/
+
+            //Part 14 for loop
+
+            for(int i = 0; i < foodAmount.Length; i++)
+            {
+                Console.WriteLine(i);
+                Console.WriteLine(foodAmount[i]);
+                Console.WriteLine("please enter the amount for "+foodList[i]);
+                foodAmount[i] =int.Parse (Console.ReadLine());
+                Console.WriteLine(foodAmount[i]);
             }
+
+
         }
+
     }
 }
