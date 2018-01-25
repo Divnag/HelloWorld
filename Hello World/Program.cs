@@ -268,16 +268,61 @@ namespace Hello_World
             } 
             while (action != "exit");*/
 
-            //Part 14 for loop
+    //Part 14 for loop
 
-            for(int i = 0; i < foodAmount.Length; i++)
+          /*  for(int i = 0; i < foodAmount.Length; i++)
             {
                 Console.WriteLine(i);
                 Console.WriteLine(foodAmount[i]);
                 Console.WriteLine("please enter the amount for "+foodList[i]);
                 foodAmount[i] =int.Parse (Console.ReadLine());
                 Console.WriteLine(foodAmount[i]);
+            }*/
+
+   //nested loops
+
+         /*   int size = 5;    //Equals the max number of columns and rows
+            int i, k;
+            for (i = 0; i <= size; i++)
+            {
+                for (k = 0; k < i; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("");
             }
+            Console.ReadLine();*/
+
+           /* int sum = 1;
+            for (int i = 0; i <= 10; i++)
+            {
+                sum = sum + 1;
+            }
+            Console.WriteLine(sum);
+
+            int sum = 1;
+            for (int i = 0; i <= 10; i++)
+            {
+                sum = sum * 3;
+            }
+            Console.WriteLine(sum);
+            for (int i = 0; i <= 10; i++)
+            {
+                sum *= 3;
+            }
+            Console.WriteLine(sum);
+
+            for (int i = 0; i <= 10; i++)
+            {
+                sum += 3;
+            }
+            Console.WriteLine(sum);*/
+
+   
+
+
+
+
 
 
         }
